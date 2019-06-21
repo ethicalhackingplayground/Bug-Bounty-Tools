@@ -14,8 +14,8 @@ __   __ _____ _____ _  ___ _ _
 """
 
 echo -e "\e[1m"
-echo -e "\e[94m Do you want to do a new scan [Y/n]: "
-read $scans
+echo -n -e "\e[94m Do you want to do a new scan [Y/n]: "
+read scans
 
 if [ "$scans" = "Yes" ] || [ "$scans" = "Y" ] || [ "$scans" = "YES" ] || [ "$scans" = "y" ]; then
 
