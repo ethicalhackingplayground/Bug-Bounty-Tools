@@ -36,7 +36,7 @@ if [ "$scans" = "Yes" ] || [ "$scans" = "Y" ] || [ "$scans" = "YES" ]; then
 	echo -e "\e[1m"
 	echo -e "\e[93m[+] Finding Subdomain takeovers.."
 	cd /root/go/src/github.com/Ice3man543/SubOver
-	go run subover.go -l ./all_subdomains.lst -timeout 5 -o subover.out;
+	go run subover.go -l /root/Bug-Bounty-Tools/all_subdomains.lst -timeout 5 -o subover.out;
 
 	echo -e "\e[1m"
 	echo -e "\e[93m"
@@ -49,7 +49,7 @@ else
         echo -e "\e[1m"
         echo -e "\e[93m[+] Finding Subdomain takeovers.."
         cd /root/go/src/github.com/Ice3man543/SubOver
-        go run subover.go -l ./all_subdomains.lst -timeout 5 -o subover.out;
+        go run subover.go -l /root/Bug-Bounty-Tools/all_subdomains.lst -timeout 5 -o subover.out;
 
 
         echo -e "\e[1m"
