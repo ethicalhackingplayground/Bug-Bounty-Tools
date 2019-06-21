@@ -34,7 +34,7 @@ The XSSkiller scripts uses xsser to spider through all domains and check for xss
 
 **`crontab -e`**
 
-Append this at the end.
+Append this at the end for it to run every 12 hours.
 
 *`42 */12 * * *  /root/Bug-Bounty-Tools/autosploit.sh >> ~/cronjob.log 2>&1`*
 
