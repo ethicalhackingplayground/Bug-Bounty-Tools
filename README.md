@@ -27,7 +27,7 @@ The XSSkiller scripts uses xsser to spider through all domains and check for xss
 
 
 ### How to create cron job so the scripts run every 12 hours
-`/etc/init.d/cron start
+`/etc/init.d/cron start`
 
 `crontab -e`
 
