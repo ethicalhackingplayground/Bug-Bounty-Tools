@@ -28,7 +28,8 @@ if [ "$scans" = "Yes" ] || [ "$scans" = "Y" ] || [ "$scans" = "YES" ] || [ "$sca
 
 	cd bounty-targets-data/; 
 	git pull; 
-	cp bounty-targets-data/data/wildcards.txt ./; cat wildcards.txt | sed 's/^*.//g' | grep -v '*' > wildcards_without_stars.txt; 
+	cd ../;
+	cp bounty-targets-data/data/wildcards.txt .; cat wildcards.txt | sed 's/^*.//g' | grep -v '*' > wildcards_without_stars.txt; 
 	while read host; 
    		do file=$host && file+="_subfinder.out"; 
    		~/go/bin/subfinder -o $file -d $host -silent; 
