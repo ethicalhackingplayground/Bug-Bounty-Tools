@@ -18,7 +18,7 @@ echo -e "\e[1m"
 echo -e "\e[94m Do you want to do a new scan [Y/n]: "
 read $scans
 
-if [ "$scans" = "Yes" ] || [ "$scans" = "Y" ] || [ "$scans" = "YES" ]; then
+if [ "$scans" = "Yes" ] || [ "$scans" = "Y" ] || [ "$scans" = "YES" ] || [ "$scans" = "y" ]; then
 	rm *.out
 
 	echo -e "\e[1m"
