@@ -12,7 +12,8 @@ __   __ _____ _____ _  ___ _ _
 """
 
 echo -e "\e[1m"
-echo -e "\e[5m\e[3m\e[35m[+] Scanning for subdomains, Yeet!! "
+echo -e "\e[3m\e[35m[+] Scanning for subdomains, Yeet!! "
+echo -e "\e[32m[+] Could take sometime.."
 echo -e "\e[0m"
 
 
