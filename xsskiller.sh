@@ -17,7 +17,7 @@ read $scans
 
 if [ "$scans" = "Yes" ] || [ "$scans" = "Y" ] || [ "$scans" = "YES" ]; then
 
-
+	rm *.out
 	echo -e "\e[1m"
 	echo -e "\e[3m\e[35m[+] Scanning for subdomains, Yeet!! "
 	echo -e "\e[32m[+] Could take sometime.."
