@@ -14,7 +14,7 @@ echo """
 
 
 echo -e "\e[1m"
-echo -e "\e[93m\e[3m[+] Searching for subdomains, YEET!!!"
+echo -e "\e[93m\e[3m[+] Scanning for subdomains, Yeet!!!"
 echo -e "\e[95m\e[3m[+] Could take sometime.."
 echo -e "\e[0m"
 
