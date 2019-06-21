@@ -12,27 +12,48 @@ echo """
                                                
 """
 
-
 echo -e "\e[1m"
-echo -e "\e[3m\e[35m[+] Scanning for subdomains, Yeet!! "
-echo -e "\e[32m[+] This will take sometime.."
-echo -e "\e[0m"
+echo -e "\e[94m Do you want to do a new scan [Y/n]: "
+read $scans
+
+if [ "$scans" = "Yes" ] || [ "$scans" = "Y" ] || [ "$scans" = "YES" ]; then
+	rm *.out
+
+	echo -e "\e[1m"
+	echo -e "\e[93m\e[3m[+] Searching for subdomains, YEET!!!"
+	echo -e "\e[95m\e[3m[+] Could take sometime.."
+	echo -e "\e[0m"
+
+	cd bounty-targets-data/; 
+	git pull; 
+	cp bounty-targets-data/data/wildcards.txt ./; cat wildcards.txt | sed 's/^*.//g' | grep -v '*' > wildcards_without_stars.txt; 
+	while read host; 
+   		do file=$host && file+="_subfinder.out"; 
+   		~/go/bin/subfinder -o $file -d $host -silent; 
+	done < ./wildcards_without_stars.txt;	
+	cat *.out > all_subdomains.lst; 
+
+	echo -e "\e[1m"
+	echo -e "\e[93m[+] Finding Subdomain takeovers.."
+	cd /root/go/src/github.com/Ice3man543/SubOver
+	go run subover.go -l ./all_subdomains.lst -timeout 5 -o subover.out;
+
+	echo -e "\e[1m"
+	echo -e "\e[93m"
+	cat subover.out
+
+else
+
+ 	cat *.out > all_subdomains.lst; 
+
+        echo -e "\e[1m"
+        echo -e "\e[93m[+] Finding Subdomain takeovers.."
+        cd /root/go/src/github.com/Ice3man543/SubOver
+        go run subover.go -l ./all_subdomains.lst -timeout 5 -o subover.out;
 
 
-cd ~/subdomain_takeover/bounty-targets-data/; 
-git pull; 
-cd ~/subdomain_takeover; 
-cp ~/subdomain_takeover/bounty-targets-data/data/wildcards.txt ./; cat wildcards.txt | sed 's/^*.//g' | grep -v '*' > wildcards_without_stars.txt; 
-while read host; 
-   do file=$host && file+="_subfinder.out"; 
-   ~/go/bin/subfinder -o $file -d $host -silent; 
-done < ./wildcards_without_stars.txt;
-cat ./*.out > all_subdomains.lst; 
+        echo -e "\e[1m"
+        echo -e "\e[93m"
+        cat subover.out
 
-echo -e "\e[1m"
-echo -e "\[93 [+] Finding Subdomain takeovers.."
-~/go/bin/SubOver -l ./all_subdomains.lst -timeout 5 -o subover.out;
-
-echo -e "\e[1m"
-echo -e "\e[93m"
-cat subover.out
+fi
