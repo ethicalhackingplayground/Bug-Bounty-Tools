@@ -42,8 +42,6 @@ echo -e "\e[0m"
 xsser -i /root/Bug-Bounty-Tools/bounty-targets-data/data/domains.txt --auto --Str --Coo --Xsa --Xsr --Ind --Anchor --Dcp --Dom -c 100 --Cw=50 --delay=1 --save  --Phpids0.6.5  --Phpids0.7 --Imperva --Webknight --F5bigip --Barracuda --Modsec --Quickdefense --heuristic --threads=10 --silent
 echo -e "\e[1m"
 echo -e "\e[93m"
-cat *.raw >> report.raw
-cat report.raw
 echo -e "\e[0m"
 
 echo -e "\e[1m"
