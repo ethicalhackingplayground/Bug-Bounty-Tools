@@ -1,5 +1,7 @@
 #!/bin/bash
 
+clear
+
 echo -e "\e[1m"
 echo -e "\e[31m"
 echo """
