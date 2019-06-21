@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo -e "\e[1m"
-echo -e "\e[35m"
+echo -e "\e[31m"
 echo """
   ______       _     _     _ _ _ _              
  / _____)     | |   (_)   | (_) | |             
@@ -14,7 +14,8 @@ echo """
 
 
 echo -e "\e[1m"
-echo -e "\e[93m\e[3m\e[5m[+] Searching for subdomain takeovers.."
+echo -e "\e[93m\e[3m[+] Searching for subdomain takeovers.."
+echo -e "\e[95m\e[3m[+] Could take sometime.."
 echo -e "\e[0m"
 
 cd ~/subdomain_takeover/bounty-targets-data/; 
