@@ -35,4 +35,4 @@ Append this at the end.
 
 `42 */12 * * *  /root/subkiller/subdomain_killer.sh && /root/subkiller/xsskiller.sh >> ~/cronjob.log 2>&1`
 
-Hope you enjoy these shell script, happy bug hunting.
+Hope you enjoy these shell scripts, happy bug hunting.
