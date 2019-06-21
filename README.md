@@ -8,12 +8,15 @@ hackerone and bugcrowd.
 ### How does XSSKiller Work?
 The XSSkiller scripts uses xsser to spider through all domains and check for xss in Cookies,Referer,User-Agent and basically everywhere in the request, it also uses bypass filters.
 
-> replace the domains.txt file in the bounty-targets-data/data directory
+
+
 
 ### How to install
 `chmod +x install.sh`
 
 `./install.sh`
+
+`replace the domains.txt file in the bounty-targets-data/data directory`
 
 ### How to run tools
 `chmod +x xsskiller.sh && chmod +x subdomain_killer.sh`
