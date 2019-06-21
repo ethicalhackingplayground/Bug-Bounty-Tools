@@ -12,7 +12,7 @@ __   __ _____ _____ _  ___ _ _
 """
 
 echo -e "\e[1m"
-echo -e "\e[93m[+] Running XSS on all <subdomains>, Yeet!! "
+echo -e "\e[5m\e[35m[+] Scanning for subdomains, Yeet!! "
 echo -e "\e[0m"
 
 
@@ -20,13 +20,13 @@ cp bounty-targets-data/data/wildcards.txt .; cat wildcards.txt | sed 's/^*.//g' 
 
 while read host; 
    do file=$host && file+="_subfinder.out"; 
-   ~/go/bin/subfinder -o $file -d $host; 
+   ~/go/bin/subfinder -o $file -d $host -silent; 
 
 done < wildcards_without_stars.txt;
 cat *.out > all_subdomains.lst; 
 
 echo -e "\e[1m"
-echo -e "\e[34m Appending https:// to each subdomain.."
+echo -e "\e[5m\e[34m Appending https:// to each subdomain.."
 
 while read $file;
 	do 
