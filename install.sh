@@ -3,7 +3,6 @@
 echo -e "\e[1m"
 echo -e "\e[32m[+] Acquiring Targets.."
 echo -e "\e[0m"
-cd ~;
 git clone https://github.com/arkadiyt/bounty-targets-data;
 
 echo -e "\e[1m"
