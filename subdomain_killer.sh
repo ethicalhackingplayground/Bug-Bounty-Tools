@@ -14,7 +14,7 @@ echo """
 
 
 echo -e "\e[1m"
-echo -e "\e[93m\e[3m[+] Searching for subdomain takeovers.."
+echo -e "\e[93m\e[3m[+] Searching for subdomains, YEET!!!"
 echo -e "\e[95m\e[3m[+] Could take sometime.."
 echo -e "\e[0m"
 
@@ -27,6 +27,9 @@ while read host;
    ~/go/bin/subfinder -o $file -d $host -silent; 
 done < ./wildcards_without_stars.txt;
 cat ./*.out > all_subdomains.lst; 
+
+echo -e "\e[1m"
+echo -e "\[93 [+] Finding Subdomain takeovers.."
 ~/go/bin/SubOver -l ./all_subdomains.lst -timeout 5 -o subover.out;
 
 echo -e "\e[1m"
