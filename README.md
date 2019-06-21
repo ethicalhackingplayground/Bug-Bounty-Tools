@@ -19,7 +19,7 @@ The XSSkiller scripts uses xsser to spider through all domains and check for xss
 *replace this domains.txt file with the one in the bounty-targets-data/data directory*
 
 ### How to run tools
-**`chmod +x xsskiller.sh && chmod +x subdomain_killer.sh && chmod autsploit.sh`**
+**`chmod +x xsskiller.sh && chmod +x subdomain_killer.sh && chmod autosploit.sh`**
 
 **`./xsskiller`**
 
