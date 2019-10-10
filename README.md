@@ -1,5 +1,5 @@
 # Bug-Bounty-Tools
-These are all the tools I use for bugbountys
+These are all the tools I have programmed to help me with bugbountys
 
 ## Examples of usage:
 
