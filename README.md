@@ -9,6 +9,8 @@ These are all the tools I have programmed to help me with bugbountys
 python redir.py -w urls.txt -p payloads -d evil.com -s 0 -o openredirects.txt
 ```
 
+![Screenshot](open_redirect.jpg)
+
 ### Local File inclusion
 
 ```
