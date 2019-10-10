@@ -1,41 +1,50 @@
 # Bug-Bounty-Tools
-Find sub domain take overs and XSS on all domains on hackerone and bugcrowd.
+These are all the tools I use for bugbountys
 
-### What Are these tools?
-These two scripts automate finding subdomain takeovers and XSS (Crosss-site-scripting) Over all domains in
-hackerone and bugcrowd.
+## Examples of usage:
 
-### How does XSSKiller Work?
-The XSSkiller scripts uses xsser to spider through all domains and check for xss in Cookies,Referer,User-Agent and basically everywhere in the request, it also uses bypass filters.
+### Open Redirects
+
+```
+python redir.py -w urls.txt -p payloads -d evil.com -s 0 -o openredirects.txt
+```
+
+### Local File inclusion
+
+```
+python lfi.py -u urls.txt -p payloads -t 100 -o lfi.txt
+```
+
+### SSRF Links
+
+```
+python find_urls2.py -d domain.com -t 100 -s urls.txt -o links.txt
+```
+
+```
+python find_urls2.py -d domain.com -t 100 -s source.js -o links.txt
+```
+
+### CRLF 
+
+```
+python crlf-auto.py -f urls.txt
+```
+
+### S3 Buckets
+
+```
+python s3bucketer.py -d urls.txt -b buckets.txt -q 1 -o found.txt
+```
 
 
+Note, automation tools should be the last resort because devlopers would use such tools during there testing.
 
+Enjoy hunters,
 
-### How to install
-**`chmod +x install.sh`**
+If you find something and you enjoy my tools
 
-**`./install.sh`**
+Donate to me here.
 
-*replace this domains.txt file with the one in the bounty-targets-data/data directory*
+[DONATE](paypal.me/krypt0mux)
 
-### How to run tools
-**`chmod +x xsskiller.sh && chmod +x subdomain_killer.sh && chmod autosploit.sh`**
-
-**`./xsskiller`**
-
-**`./subdomain_killer.sh`**
-
-  **or**
-**`./autosploit.sh`**
-
-
-### How to create cron job so the scripts run every 12 hours
-**`/etc/init.d/cron start`**
-
-**`crontab -e`**
-
-Append this at the end for it to run every 12 hours.
-
-*`42 */12 * * *  /root/Bug-Bounty-Tools/autosploit.sh >> ~/cronjob.log 2>&1`*
-
-Hope you enjoy these shell scripts, happy bug hunting.
