@@ -51,5 +51,5 @@ If you find something and you enjoy my tools
 
 Donate to me here.
 
-[DONATE](paypal.me/krypt0mux)
-
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/users/EthicalHackingPlayground/sponsorship" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-heart" data-size="large" aria-label="Sponsor @EthicalHackingPlayground on GitHub">Sponsor</a>
