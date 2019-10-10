@@ -17,6 +17,8 @@ python redir.py -w urls.txt -p payloads -d evil.com -s 0 -o openredirects.txt
 python lfi.py -u urls.txt -p payloads -t 100 -o lfi.txt
 ```
 
+![Screenshot](lfitester.PNG)
+
 ### SSRF Links
 
 ```
