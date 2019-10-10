@@ -51,7 +51,7 @@ If you find something and you enjoy my tools
 
 Donate to me here.
 
-[DONATE](paypal.me/krypt0mux)
+[DONATE](https://paypal.me/krypt0mux)
 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=BBKlQvxo3xg
