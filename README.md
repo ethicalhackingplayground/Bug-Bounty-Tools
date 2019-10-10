@@ -37,6 +37,7 @@ python crlf-auto.py -f urls.txt
 python s3bucketer.py -d urls.txt -b buckets.txt -q 1 -o found.txt
 ```
 
+![Screenshot](s3bucketer2.png)
 
 Note, automation tools should be the last resort because devlopers would use such tools during there testing.
 
