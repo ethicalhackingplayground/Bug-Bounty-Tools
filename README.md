@@ -52,3 +52,8 @@ If you find something and you enjoy my tools
 Donate to me here.
 
 [DONATE](paypal.me/krypt0mux)
+
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=BBKlQvxo3xg
+" target="_blank"><img src="http://img.youtube.com/vi/BBKlQvxo3xg/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="720" height="480" border="10" /></a>
