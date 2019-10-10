@@ -1,0 +1,32 @@
+{
+	"manifest_version": 2,
+	"name": "xssAuto",
+	"version": "1.0",
+	"description": "Loads a bunch of links for knoxss to use",
+	"browser_action": 
+	{
+			"default_icon": 
+			{
+				"48": "src48x48.png"
+			},
+			"default_title": "xssAuto"
+	},
+	"icons":
+		{
+			"48": "src48x48.png"
+		},
+ 	"background": 
+ 	{
+ 		"scripts":
+ 		[
+ 			"background.js"
+ 		]
+ 	},
+
+    "permissions": [
+        "storage",
+        "webRequest",
+    	"webRequestBlocking",
+        "notifications"
+    ]
+}
